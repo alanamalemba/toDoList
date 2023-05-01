@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refresher</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+      <header>
+        <h1>To do list</h1>
+      </header>
+
+      <!-- TASKS LIST -->
+      <div class="tasks">
+        <h2>Tasks</h2>
+        <ul class="tasks-list"></ul>
+        <!-- CREATE NEW TASK -->
+        <div class="new task-input">
+          <label for="new-task">Create new task</label>
+          <input
+            type="text"
+            name=""
+            id="new-task"
+            placeholder="Input task name"
+          />
+          <button id="create-task-button">Create</button>
+        </div>
+      </div>
+
+      <!-- ACTIVE TASK TAB-->
+      <div class="active-tab">
+        <h2 class="active-task-name"></h2>
+        <!-- TO DO LIST -->
+        <ul class="to-do-list"></ul>
+        <!-- ADD TO DO LIST ITEM -->
+        <div class="new list-item">
+          <label for="new-task">Add new todo item</label>
+          <input
+            type="text"
+            name=""
+            id="new-item"
+            placeholder="Input item name"
+          />
+          <button id="add-todo-item-button">Add</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

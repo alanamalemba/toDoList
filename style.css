@@ -1,0 +1,123 @@
+:root {
+  --active-color: greenyellow;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: solid 1px red; */
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.459);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  gap: 20px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px 0px;
+  grid-column: 1/3;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* TASKS */
+.tasks {
+  grid-column: 1/2;
+}
+.tasks,
+.active-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px 20px;
+  background: gray;
+  border-radius: 10px;
+}
+
+/* TASKS-LIST */
+.tasks-list,
+.to-do-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task,
+.to-do-item {
+  outline: solid black 2px;
+  border-radius: 4px;
+  padding: 2px 4px;
+  /* box-shadow: inset 1px 1px 4px white; */
+}
+
+.active-task {
+  background-color: #fff;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* NEW TASK INPUT */
+.new {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.isDone {
+  background-color: var(--active-color);
+}
+
+.new input {
+  width: 30vw;
+}
+
+.to-do-item {
+  cursor: pointer;
+}
+
+.new button {
+  width: 120px;
+}
+
+button,
+.task {
+  cursor: pointer;
+}
+
+/* ACTIVE TAB */
+.active-tab {
+  grid-column: 2/3;
+  display: none;
+}
+
+.active-tab h2 {
+  color: greenyellow;
+  font-size: 1.2rem;
+}
+
+.new {
+  /* box-shadow: inset 1px 1px 4px rgba(255, 255, 255, 0.731); */
+  border-radius: 4px;
+  border: solid white 1px;
+  padding: 4px;
+}
